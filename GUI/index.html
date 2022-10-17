@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sherlock Homes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="brand">
+          <h1><a href="#">Logo</a></h1>
+        </div>
+        <div class="navbar desktop">
+          <nav class="nav">
+            <ul class="menu-list">
+              <li class="menu-item"><a href="#">Home</a></li>
+              <li class="menu-item"><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="toggle_menu hide_desktop"><i class="fa fa-bars"></i></div>
+        <div class="navbar mobile hide_desktop">
+          <nav class="nav">
+            <ul class="menu-list">
+              <li class="menu-item"><a href="#">About Us</a></li>
+              <li class="menu-item"><a href="#">logIn</a></li>
+              <li class="menu-item"><a href="#">Sign up</a></li>
+              <button class="close"><i class="fa fa-times"></i></button>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <div class="grid-row-2">
+        <div class="col col-left">
+            <h3>Welcome to the website of Sherlock Homes</h3>
+            <p><br>Current Address: 221B Baker Street<br>
+            He is a consulting detective, the only one in the world.</p>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="col col-right"><img src="sh.png" alt="Sherlock"></div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="container">
+        <div class="grid-row-3">
+          <div class="col">
+            <div class="grid-icon-auto">
+              <div class="icon">
+                <img src="iocn-1.png" alt="icon 1">
+              </div>
+              <div class="text">
+                <h3>Solve your Cases</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="grid-icon-auto">
+              <div class="icon">
+                <img src="iocn-2.png" alt="icon 1">
+              </div>
+              <div class="text">
+                <h3>Read about Past Cases</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="grid-icon-auto">
+              <div class="icon">
+                <img src="iocn-3.png" alt="icon 1">
+              </div>
+              <div class="text">
+                <h3>The Art of Deduction</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    jQuery(document).ready(function () {
+      jQuery(".toggle_menu").click(function () {
+        jQuery(".navbar.mobile").addClass("show");
+      });
+      jQuery(".close").click(function () {
+        jQuery(".navbar.mobile").removeClass("show");
+      });
+    })
+  </script>
+</body>
+</html>
