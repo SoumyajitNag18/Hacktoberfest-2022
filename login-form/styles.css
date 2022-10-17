@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./backgroundimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginform{
+    width: 32%;
+    border-radius: 20px;
+    padding: 50px;
+    /* background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.0)); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+.loginform h2{
+    text-align: center;
+}
+
+.loginform p{
+    font-family:  'Poppins', sans-serif;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.loginform form{
+    width: 100%;
+}
+
+.loginform i{
+    position: absolute;
+    top: 231px;
+    right: 65px;
+}
+
+.loginform input{
+    width: 100%;
+    display: block;
+    margin: 1rem 0;
+    height: 2.7rem;
+    border-radius: 8px;
+    border-width: 1px;
+    padding-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #859ca4b4;
+}
+
+.loginform input:focus{
+    outline-color: #0086b3;
+}
+
+.loginform a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.loginform form a{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.loginform a:hover{
+    color: #0086b3;
+}
+
+.loginform button{
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background-color: #4dd2ff;
+    font-family:  'Poppins', sans-serif;
+    font-size: 1rem;
+    border-width: 0;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.loginform button:hover{
+    transition:  .2s;
+    background-color: #0086b3 ;
+}
+
+.signup-text{
+    font-size: 0.8em;
+}
+
+
+@media (max-width:930px){
+    .loginform{
+        width: 100%;
+        height: 100%;
+    }
+}
