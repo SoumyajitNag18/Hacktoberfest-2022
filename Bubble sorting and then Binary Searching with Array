@@ -1,0 +1,61 @@
+import java.io.*;
+class sort {
+   InputStreamReader read= new InputStreamReader(System.in);
+   BufferedReader in=new BufferedReader(read);
+     System.out.println("Enter the array ");
+     n= Integer.parseInt(in.readLine());
+     for(i=0;i<n;i++)
+     {
+        System.out.println("Enter a number"); 
+         a[i]= Integer.parseInt(in.readLine());
+     }
+    }
+    void bubsort()
+    {
+        int j, temp;
+        for(i=0;i<(n-1);i++)
+     {
+         for(j=0;j<(n-1)-i;j++){
+             if(ar[j]>ar[j+1])
+             {
+                 temp=ar[j];
+                 ar[j]=ar[j+1];
+                 ar[j+1]=temp;
+             }
+         }
+    }
+    System.out.println("Elements in sorted array : ");
+    for(i=0;i<n;i++)
+     {
+        System.out.print(ar[i]);
+        System.out.println();
+     }
+}
+ void binsearch()throws IOException
+ {
+     int lb,ub,mid,found=0,item;
+     lb=0;
+     ub=n-1;
+     mid=0;
+   InputStreamReader read= new InputStreamReader(System.in);
+   BufferedReader in=new BufferedReader(read);
+     System.out.println("Enter the number to be searched ");
+     item= Integer.parseInt(in.readLine()); 
+     while(found=0 && lb!=ub)
+     {
+         mid=(lb+ub)/2;
+         if(item<ar[mid])
+         ub=mid;
+         if(item>ar[mid])
+         lb=mid;
+         if(item==ar[mid])
+         found=1;
+     }
+     if(found == 1)
+     {
+       System.out.println("Search Successful!!");  
+       System.out.println("Number found at position : "+mid);
+     }
+     else
+     System.out.println("Search not Successful!!");
+ }
